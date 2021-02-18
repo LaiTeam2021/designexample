@@ -33,4 +33,8 @@
               android:label="fragment_profile" tools:layout="@layout/fragment_profile"/>
     <fragment android:id="@+id/feed" android:name="com.laiteam.designexample.feed" android:label="fragment_feed"
               tools:layout="@layout/fragment_feed"/>
+    <fragment android:id="@+id/postPage" android:name="com.laiteam.designexample.PostPage"
+              android:label="fragment_post_page" tools:layout="@layout/fragment_post_page">
+        <action android:id="@+id/action_postPage_to_mainPage2" app:destination="@id/mainPage"/>
+    </fragment>
 </navigation>

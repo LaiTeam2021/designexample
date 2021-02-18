@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context=".MainPage">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
-
-</FrameLayout>
+    <ImageView
+            android:src="@drawable/ic_baseline_home_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp" android:id="@+id/imageView" tools:layout_editor_absoluteY="674dp"
+            tools:layout_editor_absoluteX="16dp"/>
+    <ImageView
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp" android:id="@+id/imageView2" tools:layout_editor_absoluteY="674dp"
+            tools:layout_editor_absoluteX="93dp"/>
+    <ImageView
+            android:src="@android:drawable/ic_input_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp" android:id="@+id/imageView3" tools:layout_editor_absoluteY="674dp"
+            tools:layout_editor_absoluteX="169dp"/>
+    <ImageView
+            android:src="@android:drawable/sym_action_email"
+            android:layout_width="50dp"
+            android:layout_height="50dp" android:id="@+id/imageView4" tools:layout_editor_absoluteY="674dp"
+            tools:layout_editor_absoluteX="265dp"/>
+    <ImageView
+            android:src="@drawable/ic_baseline_assignment_ind_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp" android:id="@+id/imageView5" tools:layout_editor_absoluteY="674dp"
+            tools:layout_editor_absoluteX="345dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Content will be replace by feed/profile/notification"
+            android:id="@+id/editTextTextPersonName2"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toTopOf="@+id/imageView3"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
