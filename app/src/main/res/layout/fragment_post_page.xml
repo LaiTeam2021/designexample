@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".PostPage">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Post" android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center" tools:layout_editor_absoluteY="-16dp" tools:layout_editor_absoluteX="0dp"
+            android:enabled="true"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2" tools:layout_editor_absoluteY="98dp"
+            tools:layout_editor_absoluteX="32dp" tools:text="Say something"/>
+    <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="80dp"
+            android:layout_height="80dp" android:id="@+id/imageView6" tools:layout_editor_absoluteY="166dp"
+            tools:layout_editor_absoluteX="32dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView3" tools:layout_editor_absoluteY="288dp"
+            tools:layout_editor_absoluteX="43dp" tools:text="板块"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView4" tools:layout_editor_absoluteY="288dp"
+            tools:layout_editor_absoluteX="126dp" tools:text="内容"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView5" tools:layout_editor_absoluteY="343dp"
+            tools:layout_editor_absoluteX="43dp" tools:text="Module"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView6" tools:layout_editor_absoluteY="52dp"
+            tools:layout_editor_absoluteX="32dp" tools:text="标题"/>
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/switch1" tools:layout_editor_absoluteY="71dp"
+            tools:layout_editor_absoluteX="272dp" android:text="自动保存草稿"/>
+    <Button
+            android:text="Post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button2" tools:layout_editor_absoluteY="1dp"
+            tools:layout_editor_absoluteX="323dp"/>
+    <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button3" tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="2dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView7" tools:layout_editor_absoluteY="389dp"
+            tools:layout_editor_absoluteX="45dp" tools:text="Tag"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView8" tools:layout_editor_absoluteY="425dp"
+            tools:layout_editor_absoluteX="41dp" tools:text="Location"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
