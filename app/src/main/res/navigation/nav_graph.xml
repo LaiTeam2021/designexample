@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
 
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.laiteam.designexample.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_loginPage"
+            app:destination="@id/loginPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.laiteam.designexample.LoginPage"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" >
+        <action android:id="@+id/action_loginPage_to_mainPage" app:destination="@id/mainPage"/>
+    </fragment>
+    <fragment android:id="@+id/mainPage" android:name="com.laiteam.designexample.MainPage"
+              android:label="fragment_main_page" tools:layout="@layout/fragment_main_page">
+        <action android:id="@+id/action_mainPage_to_notification" app:destination="@id/notification"/>
+        <action android:id="@+id/action_mainPage_to_profile" app:destination="@id/profile"/>
+        <action android:id="@+id/action_mainPage_to_feed" app:destination="@id/feed"/>
+    </fragment>
+    <fragment android:id="@+id/notification" android:name="com.laiteam.designexample.notification"
+              android:label="fragment_notification" tools:layout="@layout/fragment_notification"/>
+    <fragment android:id="@+id/profile" android:name="com.laiteam.designexample.profile"
+              android:label="fragment_profile" tools:layout="@layout/fragment_profile"/>
+    <fragment android:id="@+id/feed" android:name="com.laiteam.designexample.feed" android:label="fragment_feed"
+              tools:layout="@layout/fragment_feed"/>
 </navigation>
