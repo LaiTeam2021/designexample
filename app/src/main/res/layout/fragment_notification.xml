@@ -11,64 +11,97 @@
         android:layout_width="400dp"
         android:layout_height="675dp"
         tools:layout_editor_absoluteX="0dp" tools:layout_editor_absoluteY="-1dp"/>
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="87dp"
-        android:layout_height="70dp" android:text="赞" tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="3dp"/>
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="88dp"
-        android:layout_height="62dp" android:src="@android:drawable/ic_dialog_email"
-        tools:layout_editor_absoluteX="312dp" tools:layout_editor_absoluteY="11dp"/>
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="77dp" android:layout_height="53dp" tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="16dp" tools:src="@tools:sample/avatars"/>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         app:cardCornerRadius="8dp"
-        app:cardElevation="12dp" tools:layout_editor_absoluteX="5dp" tools:layout_editor_absoluteY="96dp">
+        app:cardElevation="12dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="103dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="384dp"
-            android:layout_height="190dp"
-            android:layout_margin="12dp" android:background="#F4E7E7">
+            android:layout_height="100dp"
+            android:layout_margin="12dp"
+            android:background="#F4E7E7">
+
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="53dp" android:layout_height="45dp" tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="26dp" tools:src="@tools:sample/avatars"/>
+                android:layout_width="53dp"
+                android:layout_height="45dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="26dp"
+                tools:src="@tools:sample/avatars" />
+
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:text="Name" tools:layout_editor_absoluteX="85dp"
-                tools:layout_editor_absoluteY="26dp"/>
+                android:layout_height="wrap_content"
+                android:text="Name"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="26dp" />
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="181dp"
-                android:layout_height="69dp" android:text="Content" tools:layout_editor_absoluteX="85dp"
-                tools:layout_editor_absoluteY="60dp"/>
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="183dp"
-                android:layout_height="25dp" android:text="Post" tools:layout_editor_absoluteX="85dp"
-                tools:layout_editor_absoluteY="144dp"/>
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="103dp"
-                android:layout_height="38dp" android:text="Response" tools:layout_editor_absoluteX="280dp"
-                tools:layout_editor_absoluteY="136dp"/>
+                android:layout_height="69dp"
+                android:text="Content"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="52dp" />
+
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:text="Time" tools:layout_editor_absoluteX="287dp"
-                tools:layout_editor_absoluteY="26dp"/>
+                android:layout_height="wrap_content"
+                android:text="Time"
+                tools:layout_editor_absoluteX="287dp"
+                tools:layout_editor_absoluteY="26dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_reply_24"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_tag_faces_24"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_thumb_up_24"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_notifications_24"
+        tools:layout_editor_absoluteX="304dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="4dp"
+        tools:text="消息" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
