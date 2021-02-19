@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
+
     app:startDestination="@id/splashScreen">
 
     <fragment
@@ -14,12 +15,20 @@
             android:id="@+id/action_splashScreen_to_loginPage"
             app:destination="@id/loginPage" />
     </fragment>
+
+
     <fragment
         android:id="@+id/loginPage"
         android:name="com.laiteam.designexample.LoginPage"
         android:label="fragment_login_page"
         tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/action_loginPage_to_registerFragment"
+            app:destination="@id/registerFragment" />
         <action android:id="@+id/action_loginPage_to_mainPage" app:destination="@id/mainPage"/>
+        <action
+            android:id="@+id/action_loginPage_to_resetPassword_2Fragment"
+            app:destination="@id/resetPassword_2Fragment" />
     </fragment>
     <fragment android:id="@+id/mainPage" android:name="com.laiteam.designexample.MainPage"
               android:label="fragment_main_page" tools:layout="@layout/fragment_main_page">
@@ -36,5 +45,32 @@
     <fragment android:id="@+id/postPage" android:name="com.laiteam.designexample.PostPage"
               android:label="fragment_post_page" tools:layout="@layout/fragment_post_page">
         <action android:id="@+id/action_postPage_to_mainPage2" app:destination="@id/mainPage"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.laiteam.designexample.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginPage"
+            app:destination="@id/loginPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPassword_2Fragment"
+        android:name="com.laiteam.designexample.ResetPassword_2Fragment"
+        android:label="fragment_reset_password_2"
+        tools:layout="@layout/fragment_reset_password_2" >
+        <action
+            android:id="@+id/action_resetPassword_2Fragment_to_resetPassword_3Fragment"
+            app:destination="@id/resetPassword_3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPassword_3Fragment"
+        android:name="com.laiteam.designexample.ResetPassword_3Fragment"
+        android:label="fragment_reset_password_3"
+        tools:layout="@layout/fragment_reset_password_3" >
+        <action
+            android:id="@+id/action_resetPassword_3Fragment_to_loginPage"
+            app:destination="@id/loginPage" />
     </fragment>
 </navigation>
