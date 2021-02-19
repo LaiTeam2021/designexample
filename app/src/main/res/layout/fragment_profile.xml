@@ -31,14 +31,6 @@
         tools:layout_editor_absoluteX="235dp"
         tools:layout_editor_absoluteY="308dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="60dp"
-        android:layout_height="64dp"
-        android:src="@drawable/ic_launcher_background"
-        tools:layout_editor_absoluteX="335dp"
-        tools:layout_editor_absoluteY="308dp" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -104,12 +96,72 @@
             android:text="52" />
     </com.google.android.material.tabs.TabLayout>
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="60dp"
-        android:layout_height="64dp"
-        android:src="@drawable/ic_launcher_background"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="308dp" />
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="22dp"
+        tools:text="Tim" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="41dp"
+        tools:text="ID:12312" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+        app:layout_constraintStart_toStartOf="@+id/imageButton5"
+        tools:layout_editor_absoluteY="332dp"
+        tools:text="签到" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton6"
+        app:layout_constraintStart_toStartOf="@+id/imageButton6"
+        tools:layout_editor_absoluteY="332dp"
+        tools:text="反馈" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="钱包"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="479dp"
+        tools:text="加入我们" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="372dp"
+        tools:text="兴趣组" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
